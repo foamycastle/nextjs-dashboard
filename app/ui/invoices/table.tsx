@@ -21,11 +21,11 @@ export default async function InvoicesTable({
             {invoices?.map((invoice) => (
               <div
                 key={invoice.id}
-                className="mb-2 w-full rounded-md bg-white p-4"
+                className="mb-2 w-full rounded-md bg-blue-100 p-4"
               >
                 <div className="flex items-center justify-between border-b pb-4">
                   <div>
-                    <div className="mb-2 flex items-center">
+                    <div className="mb-2 flex items-center hover:bg-amber-100">
                       <Image
                         src={invoice.image_url}
                         className="mr-2 rounded-full"
